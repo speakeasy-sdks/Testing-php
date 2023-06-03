@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 8288fd395d61164b2aa55a65c51cce27
   docVersion: 1.0.17
-  speakeasyVersion: 1.40.2
-  generationVersion: 2.34.2
+  speakeasyVersion: 1.43.0
+  generationVersion: 2.35.3
 generation:
   comments:
     disableComments: false
@@ -13,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 php:
-  version: 1.0.0
+  version: 1.1.0
   maxMethodParams: 0
   namespace: Testing\petstore
   packageName: testing/petstore
