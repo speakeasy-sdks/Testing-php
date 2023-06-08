@@ -40,7 +40,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "request", "form");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('POST', $url, $options);
         
@@ -83,7 +83,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('POST', $url, $options);
         
@@ -126,7 +126,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "request", "raw");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('POST', $url, $options);
         
@@ -169,7 +169,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "request", "json");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('POST', $url, $options);
         
@@ -212,7 +212,7 @@ class User
         
         $options = ['http_errors' => false];
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('DELETE', $url, $options);
         
@@ -244,7 +244,7 @@ class User
         
         $options = ['http_errors' => false];
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('GET', $url, $options);
         
@@ -286,7 +286,7 @@ class User
         $options = ['http_errors' => false];
         $options = array_merge_recursive($options, Utils\Utils::getQueryParams(\Testing\petstore\Models\Operations\LoginUserRequest::class, $request, null));
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('GET', $url, $options);
         
@@ -326,7 +326,7 @@ class User
         
         $options = ['http_errors' => false];
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('GET', $url, $options);
         
@@ -362,7 +362,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "user", "form");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('PUT', $url, $options);
         
@@ -398,7 +398,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "user", "json");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('PUT', $url, $options);
         
@@ -434,7 +434,7 @@ class User
         $body = Utils\Utils::serializeRequestBody($request, "requestBody", "raw");
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $httpResponse = $this->sdkConfiguration->defaultClient->request('PUT', $url, $options);
         

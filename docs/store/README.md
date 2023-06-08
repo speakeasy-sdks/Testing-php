@@ -67,7 +67,7 @@ $sdk = Petstore::builder()
 
 try {
     $requestSecurity = new GetInventorySecurity();
-    $requestSecurity->apiKey = 'YOUR_API_KEY_HERE';
+    $requestSecurity->apiKey = '';
 
     $response = $sdk->store->getInventory($requestSecurity);
 

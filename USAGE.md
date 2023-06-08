@@ -36,7 +36,7 @@ try {
     ];
 
     $requestSecurity = new AddPetFormSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->addPetForm($request, $requestSecurity);
 

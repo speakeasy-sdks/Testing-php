@@ -45,7 +45,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('POST', $url, $options);
@@ -96,7 +96,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('POST', $url, $options);
@@ -147,7 +147,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('POST', $url, $options);
@@ -195,7 +195,7 @@ class Pet
             $options['headers'] = [];
         }
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('DELETE', $url, $options);
@@ -233,7 +233,7 @@ class Pet
         $options = ['http_errors' => false];
         $options = array_merge_recursive($options, Utils\Utils::getQueryParams(\Testing\petstore\Models\Operations\FindPetsByStatusRequest::class, $request, null));
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('GET', $url, $options);
@@ -280,7 +280,7 @@ class Pet
         $options = ['http_errors' => false];
         $options = array_merge_recursive($options, Utils\Utils::getQueryParams(\Testing\petstore\Models\Operations\FindPetsByTagsRequest::class, $request, null));
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('GET', $url, $options);
@@ -326,7 +326,7 @@ class Pet
         
         $options = ['http_errors' => false];
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('GET', $url, $options);
@@ -371,7 +371,7 @@ class Pet
         $options = ['http_errors' => false];
         $options = array_merge_recursive($options, Utils\Utils::getQueryParams(\Testing\petstore\Models\Operations\UpdatePetWithFormRequest::class, $request, null));
         $options['headers']['Accept'] = '*/*';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('POST', $url, $options);
@@ -413,7 +413,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('PUT', $url, $options);
@@ -464,7 +464,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('PUT', $url, $options);
@@ -515,7 +515,7 @@ class Pet
         }
         $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json;q=1, application/xml;q=0';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('PUT', $url, $options);
@@ -562,7 +562,7 @@ class Pet
         $options = array_merge_recursive($options, $body);
         $options = array_merge_recursive($options, Utils\Utils::getQueryParams(\Testing\petstore\Models\Operations\UploadFileRequest::class, $request, null));
         $options['headers']['Accept'] = 'application/json';
-        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion);
+        $options['headers']['user-agent'] = sprintf('speakeasy-sdk/%s %s %s %s', $this->sdkConfiguration->language, $this->sdkConfiguration->sdkVersion, $this->sdkConfiguration->genVersion, $this->sdkConfiguration->openapiDocVersion);
         
         $client = Utils\Utils::configureSecurityClient($this->sdkConfiguration->defaultClient, $security);
         $httpResponse = $client->request('POST', $url, $options);

@@ -62,7 +62,7 @@ try {
     ];
 
     $requestSecurity = new AddPetFormSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->addPetForm($request, $requestSecurity);
 
@@ -116,7 +116,7 @@ try {
     ];
 
     $requestSecurity = new AddPetJsonSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->addPetJson($request, $requestSecurity);
 
@@ -150,7 +150,7 @@ try {
 'tempora'
 
     $requestSecurity = new AddPetRawSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->addPetRaw($request, $requestSecurity);
 
@@ -187,7 +187,7 @@ try {
     $request->petId = 477665;
 
     $requestSecurity = new DeletePetSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->deletePet($request, $requestSecurity);
 
@@ -224,7 +224,7 @@ try {
     $request->status = FindPetsByStatusStatus::SOLD;
 
     $requestSecurity = new FindPetsByStatusSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->findPetsByStatus($request, $requestSecurity);
 
@@ -265,7 +265,7 @@ try {
     ];
 
     $requestSecurity = new FindPetsByTagsSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->findPetsByTags($request, $requestSecurity);
 
@@ -301,7 +301,7 @@ try {
     $request->petId = 925597;
 
     $requestSecurity = new GetPetByIdSecurity();
-    $requestSecurity->apiKey = 'YOUR_API_KEY_HERE';
+    $requestSecurity->apiKey = '';
 
     $response = $sdk->pet->getPetById($request, $requestSecurity);
 
@@ -339,7 +339,7 @@ try {
     $request->status = 'sapiente';
 
     $requestSecurity = new UpdatePetWithFormSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->updatePetWithForm($request, $requestSecurity);
 
@@ -395,7 +395,7 @@ try {
     ];
 
     $requestSecurity = new UpdatePetFormSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->updatePetForm($request, $requestSecurity);
 
@@ -450,7 +450,7 @@ try {
     ];
 
     $requestSecurity = new UpdatePetJsonSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->updatePetJson($request, $requestSecurity);
 
@@ -484,7 +484,7 @@ try {
 'officia'
 
     $requestSecurity = new UpdatePetRawSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->updatePetRaw($request, $requestSecurity);
 
@@ -522,7 +522,7 @@ try {
     $request->petId = 537373;
 
     $requestSecurity = new UploadFileSecurity();
-    $requestSecurity->petstoreAuth = 'Bearer YOUR_ACCESS_TOKEN_HERE';
+    $requestSecurity->petstoreAuth = '';
 
     $response = $sdk->pet->uploadFile($request, $requestSecurity);
 
