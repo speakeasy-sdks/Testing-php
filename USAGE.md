@@ -27,7 +27,7 @@ try {
         'distinctio',
         'quibusdam',
     ];
-    $request->status = PetStatus::PENDING;
+    $request->status = PetStatus::Pending;
     $request->tags = [
         new Tag(),
         new Tag(),

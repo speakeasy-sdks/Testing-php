@@ -12,7 +12,7 @@ namespace Testing\petstore\Models\Operations;
 /** Status values that need to be considered for filter */
 enum FindPetsByStatusStatus: string
 {
-    case AVAILABLE = 'available';
-    case PENDING = 'pending';
-    case SOLD = 'sold';
+    case Available = 'available';
+    case Pending = 'pending';
+    case Sold = 'sold';
 }

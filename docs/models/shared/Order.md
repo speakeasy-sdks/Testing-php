@@ -1,0 +1,13 @@
+# Order
+
+
+## Fields
+
+| Field                                                         | Type                                                          | Required                                                      | Description                                                   | Example                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| `complete`                                                    | *?bool*                                                       | :heavy_minus_sign:                                            | N/A                                                           |                                                               |
+| `id`                                                          | *?int*                                                        | :heavy_minus_sign:                                            | N/A                                                           | 10                                                            |
+| `petId`                                                       | *?int*                                                        | :heavy_minus_sign:                                            | N/A                                                           | 198772                                                        |
+| `quantity`                                                    | *?int*                                                        | :heavy_minus_sign:                                            | N/A                                                           | 7                                                             |
+| `shipDate`                                                    | [\DateTime](https://www.php.net/manual/en/class.datetime.php) | :heavy_minus_sign:                                            | N/A                                                           |                                                               |
+| `status`                                                      | [?OrderStatus](../../models/shared/OrderStatus.md)            | :heavy_minus_sign:                                            | Order Status                                                  | approved                                                      |

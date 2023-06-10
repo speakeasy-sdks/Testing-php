@@ -12,7 +12,7 @@ namespace Testing\petstore\Models\Shared;
 /** pet status in the store */
 enum PetStatus: string
 {
-    case AVAILABLE = 'available';
-    case PENDING = 'pending';
-    case SOLD = 'sold';
+    case Available = 'available';
+    case Pending = 'pending';
+    case Sold = 'sold';
 }

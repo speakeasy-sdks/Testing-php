@@ -12,7 +12,7 @@ namespace Testing\petstore\Models\Shared;
 /** Order Status */
 enum OrderStatus: string
 {
-    case PLACED = 'placed';
-    case APPROVED = 'approved';
-    case DELIVERED = 'delivered';
+    case Placed = 'placed';
+    case Approved = 'approved';
+    case Delivered = 'delivered';
 }
